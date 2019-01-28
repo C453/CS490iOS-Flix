@@ -2,19 +2,27 @@ PODS:
   - Alamofire (4.8.0)
   - AlamofireImage (3.5.0):
     - Alamofire (~> 4.8)
+  - Cosmos (18.0.1)
+  - YouTubePlayer (0.4.0)
 
 DEPENDENCIES:
   - AlamofireImage
+  - Cosmos
+  - YouTubePlayer
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - AlamofireImage
+    - Cosmos
+    - YouTubePlayer
 
 SPEC CHECKSUMS:
   Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
   AlamofireImage: 1aea346f4dda2f6c67622fa5a89fcbb80d79cc16
+  Cosmos: 7dfaa3f52584ca5f94ab74b5c2e264019cc9f7f5
+  YouTubePlayer: 028451f6772f372d4759866db99824c676ac1473
 
-PODFILE CHECKSUM: 62a9b5e249e885ffdd04b9bb5f5c071089dcc5ef
+PODFILE CHECKSUM: ad2015ed398efcc3776eeea5275f9064716f2f1b
 
 COCOAPODS: 1.5.3

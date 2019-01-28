@@ -21,6 +21,14 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         getMovieData()
         collectionView.delegate = self
         collectionView.dataSource = self
+        
+        let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
+        
+        layout.minimumLineSpacing = 4
+        layout.minimumInteritemSpacing = 4
+        
+        let width = (view.frame.size.width - layout.minimumInteritemSpacing * 2) / 3
+        layout.itemSize = CGSize(width: width, height: width * 3 / 2)
     }
 
     func getMovieData() {
@@ -67,12 +75,25 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         let baseURL = "https://image.tmdb.org/t/p/w185"
         let posterPath = movie["poster_path"] as! String
         let posterURL = URL(string: baseURL + posterPath)
+        let rating = movie["vote_average"] as! Double
+        
+        
+        let backgroundPath = movie["backdrop_path"] as! String
+        let backgroundURL = URL(string: baseURL + backgroundPath)
             
         let vc = segue.destination as! MovieDetailViewController
-            
+        
+       
+        
+        if let id = movie["id"] as? CustomStringConvertible {
+            vc.movieID = "\(id)"
+        }
+        
         vc.movieTitle = title
         vc.movieDescription = description
         vc.posterURL = posterURL
+        vc.backgroundURL = backgroundURL
+        vc.rating = rating / 2
     }
 }
 

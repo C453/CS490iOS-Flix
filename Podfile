@@ -7,5 +7,6 @@ target 'Flix' do
 
   # Pods for Flix
   pod "AlamofireImage"
-
+  pod 'YouTubePlayer'
+  pod 'Cosmos'
 end

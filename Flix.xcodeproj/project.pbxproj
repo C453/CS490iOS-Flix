@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		485682C421FB9C1F0017CAA3 /* MovieTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485682C321FB9C1F0017CAA3 /* MovieTableCell.swift */; };
+		485682C621FB9C2C0017CAA3 /* MovieTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485682C521FB9C2C0017CAA3 /* MovieTableViewController.swift */; };
 		487EF36C21ED518C0064E18B /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487EF36B21ED518C0064E18B /* MovieCell.swift */; };
 		487EF36E21ED569A0064E18B /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487EF36D21ED569A0064E18B /* MovieDetailViewController.swift */; };
 		487FB4B021ED3B70003AA903 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487FB4AF21ED3B70003AA903 /* AppDelegate.swift */; };
@@ -19,6 +21,8 @@
 
 /* Begin PBXFileReference section */
 		0C3D996290A7C83BA5D1055A /* Pods-Flix.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flix.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Flix/Pods-Flix.debug.xcconfig"; sourceTree = "<group>"; };
+		485682C321FB9C1F0017CAA3 /* MovieTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableCell.swift; sourceTree = "<group>"; };
+		485682C521FB9C2C0017CAA3 /* MovieTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewController.swift; sourceTree = "<group>"; };
 		487EF36B21ED518C0064E18B /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		487EF36D21ED569A0064E18B /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
 		487FB4AC21ED3B70003AA903 /* Flix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flix.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,6 +77,8 @@
 				487FB4B821ED3B72003AA903 /* LaunchScreen.storyboard */,
 				487FB4BB21ED3B72003AA903 /* Info.plist */,
 				487EF36B21ED518C0064E18B /* MovieCell.swift */,
+				485682C321FB9C1F0017CAA3 /* MovieTableCell.swift */,
+				485682C521FB9C2C0017CAA3 /* MovieTableViewController.swift */,
 			);
 			path = Flix;
 			sourceTree = "<group>";
@@ -196,6 +202,8 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Flix/Pods-Flix-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
+				"${BUILT_PRODUCTS_DIR}/YouTubePlayer/YouTubePlayer.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -203,6 +211,8 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cosmos.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YouTubePlayer.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -216,7 +226,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				485682C421FB9C1F0017CAA3 /* MovieTableCell.swift in Sources */,
 				487EF36E21ED569A0064E18B /* MovieDetailViewController.swift in Sources */,
+				485682C621FB9C2C0017CAA3 /* MovieTableViewController.swift in Sources */,
 				487FB4B221ED3B70003AA903 /* ViewController.swift in Sources */,
 				487FB4B021ED3B70003AA903 /* AppDelegate.swift in Sources */,
 				487EF36C21ED518C0064E18B /* MovieCell.swift in Sources */,
